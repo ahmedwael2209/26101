@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Savonius Wind Turbine</title>
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #2C3E50; /* Dark gray for text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #E0F7FA, #B2EBF2, #80DEEA); /* Light blue gradient */
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2 {
+            color: #00796B; /* Dark green for headings */
+        }
+
+        a {
+            color: #00796B; /* Dark green for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 40px; /* Increased padding */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between title and nav */
+            margin-bottom: 40px; /* Added margin below the header */
+        }
+
+        header h1 {
+            font-size: 28px; /* Slightly larger font size for the title */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav {
+            display: flex;
+            gap: 25px; /* Increased space between tabs */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto 60px; /* Added margin-bottom to create space between sections */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery, .video-gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #00796B; /* Dark green border */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover, video:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            margin-top: 60px; /* Added margin-top for spacing */
+        }
+
+        footer p {
+            margin: 0;
+            color: #00796B; /* Dark green for footer text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Harmony Savonius Wind Turbine</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#avp">AVP HGFV</a>
+            <a href="#sources">Sources</a>
+            <a href="#media">Media</a>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="container" data-aos="fade-up" data-aos-once="false">
+        <h2>Welcome to Harmony Savonius Wind Turbine Project</h2>
+        <p>
+            The Harmony Savonius Wind Turbine is an innovative renewable energy solution designed to harness wind power efficiently. This project focuses on sustainability, simplicity, and modern engineering. Explore the pages below to learn more about its design, functionality, and development process.
+        </p>
+        <ul>
+            <li><a href="#avp">Learn about AVP HGFV</a></li>
+            <li><a href="#sources">View Sources & References</a></li>
+            <li><a href="#media">Explore Media Gallery</a></li>
+        </ul>
+    </section>
+
+    <!-- AVP HGFV Page -->
+    <section id="avp" class="container" data-aos="fade-up" data-aos-once="false">
+        <h2>AVP HGFV</h2>
+        <p>
+            The AVP HGFV (Advanced Vertical Power Harnessing Generator for Vertical Flow) is the core technology behind the Harmony Savonius Wind Turbine. It utilizes a vertical axis design, making it ideal for urban environments and areas with turbulent wind conditions.
+        </p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Vertical axis design for compact installation.</li>
+            <li>High efficiency in low wind speeds.</li>
+            <li>Eco-friendly and sustainable energy generation.</li>
+        </ul>
+        <h3>How It Works:</h3>
+        <p>
+            The turbine captures wind energy through its unique Savonius rotor design, converting kinetic energy into electrical power. Its simplicity and durability make it a cost-effective solution for renewable energy.
+        </p>
+    </section>
+
+    <!-- Sources & References Page -->
+    <section id="sources" class="container" data-aos="fade-up" data-aos-once="false">
+        <h2>Sources & References</h2>
+        <p>
+            Below is a list of sources and references used in the development of the Harmony Savonius Wind Turbine project:
+        </p>
+        <ul>
+            <li><a href="https://www.renewableenergyworld.com">Renewable Energy World</a></li>
+            <li><a href="https://www.sciencedirect.com">ScienceDirect - Wind Turbine Research</a></li>
+            <li><a href="https://www.energy.gov">U.S. Department of Energy</a></li>
+            <li><a href="https://www.wikipedia.org">Wikipedia - Savonius Wind Turbine</a></li>
+        </ul>
+    </section>
+
+    <!-- Media Page -->
+    <section id="media" class="container" data-aos="fade-up" data-aos-once="false">
+        <h2>Media Gallery</h2>
+        <p>
+            Explore images and videos showcasing the Harmony Savonius Wind Turbine in action:
+        </p>
+        <h3>Images:</h3>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x300?text=Turbine+Image+1" alt="Turbine Image 1" data-aos="zoom-in" data-aos-once="false">
+            <img src="https://via.placeholder.com/400x300?text=Turbine+Image+2" alt="Turbine Image 2" data-aos="zoom-in" data-aos-once="false">
+            <img src="https://via.placeholder.com/400x300?text=Turbine+Image+3" alt="Turbine Image 3" data-aos="zoom-in" data-aos-once="false">
+        </div>
+        <h3>Videos:</h3>
+        <div class="video-gallery">
+            <video controls data-aos="zoom-in" data-aos-once="false">
+                <source src="turbine-video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls data-aos="zoom-in" data-aos-once="false">
+                <source src="turbine-video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Harmony Savonius Wind Turbine Project. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Library Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: false, // Allow animations to repeat on every scroll
+        });
+    </script>
+</body>
+</html>
